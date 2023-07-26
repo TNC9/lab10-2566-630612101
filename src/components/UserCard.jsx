@@ -19,7 +19,7 @@ export const UserCard = ({ name, imgUrl, address, email }) => {
         {isDetailShown ? <IconChevronUp /> : <IconChevronDown />}
       </div>
       {isDetailShown && (
-        <UserCardDetail key={email} email={email} address={address} />
+        <UserCardDetail email={email} address={address} />
       )}
     </div>
   );
